@@ -8,4 +8,6 @@ public interface PerfilService {
     List<Perfil> obtenerTodosLosPerfiles();
 
     Perfil obtenerPerfilPorId(Long id);
+
+    List<Perfil> obtenerPerfilPorNombre(String nombre);
 }

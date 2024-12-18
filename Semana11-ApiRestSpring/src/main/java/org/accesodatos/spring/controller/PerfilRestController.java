@@ -1,7 +1,7 @@
-package org.accesodatos.spring.controllers;
+package org.accesodatos.spring.controller;
 
-import org.accesodatos.spring.models.Perfil;
-import org.accesodatos.spring.services.PerfilService;
+import org.accesodatos.spring.model.Perfil;
+import org.accesodatos.spring.service.PerfilService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

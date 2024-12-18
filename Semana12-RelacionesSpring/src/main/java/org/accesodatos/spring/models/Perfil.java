@@ -1,5 +1,6 @@
 package org.accesodatos.spring.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -12,9 +13,6 @@ public class Perfil {
     @Column(name = "id_perfil")
     private Long id;
 
-    @Column(name = "id_usuario")
-    private Long idUsuario;
-
     @Column(name = "nombre_completo")
     private String nombreCompleto;
 
@@ -23,4 +21,9 @@ public class Perfil {
 
     //@Column(name = "direccion")
     private String direccion;
+
+    @OneToOne
+    @JoinColumn(name = "id_usuario")
+    @JsonBackReference
+    private Usuario usuario;
 }

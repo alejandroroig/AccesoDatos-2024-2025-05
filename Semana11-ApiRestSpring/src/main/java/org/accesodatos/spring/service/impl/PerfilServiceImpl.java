@@ -1,8 +1,8 @@
-package org.accesodatos.spring.services.impl;
+package org.accesodatos.spring.service.impl;
 
-import org.accesodatos.spring.models.Perfil;
-import org.accesodatos.spring.repositories.PerfilRepository;
-import org.accesodatos.spring.services.PerfilService;
+import org.accesodatos.spring.model.Perfil;
+import org.accesodatos.spring.repository.PerfilRepository;
+import org.accesodatos.spring.service.PerfilService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

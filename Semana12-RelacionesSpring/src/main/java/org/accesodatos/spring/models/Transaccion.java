@@ -1,5 +1,6 @@
 package org.accesodatos.spring.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -14,9 +15,6 @@ public class Transaccion {
     @Column(name = "id_transaccion")
     private Long id;
 
-    @Column(name = "id_cuenta")
-    private Long idCuenta;
-
     //@Column(name = "monto")
     private Double monto;
 
@@ -25,4 +23,9 @@ public class Transaccion {
 
     @Column(name = "tipo_transaccion")
     private String tipoTransaccion;
+
+    @ManyToOne
+    @JoinColumn(name = "id_cuenta")
+    @JsonBackReference
+    private Cuenta cuenta;
 }

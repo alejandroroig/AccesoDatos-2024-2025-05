@@ -20,12 +20,12 @@ public class UsuarioRestController {
     public UsuarioRestController(UsuarioService usuarioService) {
         this.usuarioService = usuarioService;
     }
-/*
-    @GetMapping
-    public List<Usuario> obtenerTodosLosUsuarios() {
-        return usuarioService.obtenerTodosLosUsuarios();
-    }
-*/
+    /*
+        @GetMapping
+        public List<Usuario> obtenerTodosLosUsuarios() {
+            return usuarioService.obtenerTodosLosUsuarios();
+        }
+    */
     @GetMapping
     public ResponseEntity<List<Usuario>> obtenerTodosLosUsuarios() {
         List<Usuario> usuarios = usuarioService.obtenerTodosLosUsuarios();

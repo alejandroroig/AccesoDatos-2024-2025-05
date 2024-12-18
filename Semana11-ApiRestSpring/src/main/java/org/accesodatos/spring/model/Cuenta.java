@@ -1,4 +1,4 @@
-package org.accesodatos.spring.models;
+package org.accesodatos.spring.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
